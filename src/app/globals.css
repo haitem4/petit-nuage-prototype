@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 99%;
+    --foreground: 215 28% 17%;
+  }
+
+  body {
+    background-color: #FDFBF9;
+    color: #2C3E50;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.baby-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.baby-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(142, 190, 236, 0.35);
+}
